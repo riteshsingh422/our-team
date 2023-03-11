@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Our Team</title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  #frm{
+     width:500px;
+     margin:auto;
+     margin-top:100px;
+  }
+  marquee{
+     margin-top:10px;
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    text-decoration: none;
+}
+.team{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background: radial-gradient(#281c3e,#0f051d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 180px;
+}
+.team-content{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.team-content img{
+    width: 60%;
+    height: 100px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    clip-path: circle();
+}
+.center h1{
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 50px;
+}
+.box{
+    padding: 16px;
+    background: #1b1229;
+    border-radius: 15px;
+    transition: all .38s ease;
+}
+.box h3{
+    font-size: 23px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.box h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #b7b4bb;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+.icons i{
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 8px;
+    transition: all .38s ease;
+}
+.icons i:hover{
+    transform: scale(1.2);
+}
+.box:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+@media(max-width: 1240px){
+    .team{
+        width: 100%;
+        height: auto;
+        padding: 90px 2%;
+    }
+    .center h1{
+        font-size: 3.2rem;
+    }
+}
+</style>
+</head>
+<body class="container-fluid">
+    <marquee><h2 class="text-primary">Register Here</h2></marquee>
+    <form action="register" method="post" class="form card" id="frm">
+        <h2 class="bg-danger text-white card-header">Registration Form</h2>
+        <table class="table table-hover">
+        <tr>
+         <td>Name</td>
+         <td><input type="text" name="userName" required></td>
+        </tr>
+        <tr>
+         <td>Email</td>
+         <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+         <td>Mobile</td>
+         <td><input type="text" name="mobile" required></td>
+        </tr>
+        <tr>
+         <td>DOB</td>
+         <td><input type="date" name="dob" required></td>
+        </tr>
+        <tr>
+         <td>City</td>
+         <td><select name="city">
+            <option value="pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Hydrabad">Hydrabad</option>
+         </select></td>
+        </tr>
+        <tr>
+        <td>Gender</td>
+        <td><input type="radio" name="gender" value="male">Male &nbsp;
+            <input type="radio" name="gender" value="female">Female
+        </td>
+        </tr>
+        <tr class="card-footer">
+        <td><button type="submit" class="btn btn-outline-success">Register</button></td>
+        <td><button type="reset" class="btn btn-outline-danger">cancel</button></td>
+        </tr>
+        </table>
+        <button class="btn btn-outline-success d-block"><a href="showdata">Show Users</a></button>
+    </form>
+
+    <footer>
+        <section class="team">
+        <div class="center">
+            <h1>Our Team</h1>
+        </div>
+
+        <div class="team-content">
+            <div class="box">
+                <img src="image/team1.jpg">
+                <h3>Saptarishi Banerjee</h3>
+                <h5>10800221153</h5>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/saptarshi-banerjee-8309361a8/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                    <a href="https://github.com/TheSaptarshiBanerjee" target="_blank"><i class="ri-github-fill"></i></a>
+                    <a href=" https://img.shields.io/badge/-Email-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:saptarshibanerjee777@gmail.com" target="_blank"><i class="ri-mail-line"></i></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/team2.jpg">
+                <h3>Shahla Nigar</h3>
+                <h5>10800221136</h5>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/shahla-nigar-2796871b5" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                    <a href="https://github.com/Shahla750?tab=repositories" target="_blank"><i class="ri-github-fill"></i></a>
+                    <a href="nigarshahla14@gmail.com" target="_blank"><i class="ri-mail-line"></i></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/team3.jpg">
+                <h3>Ritesh Singh</h3>
+                <h5>10800221128</h5>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/riteshsinghit/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                    <a href="https://github.com/riteshsingh422" target="_blank"><i class="ri-github-fill"></i></a>
+                    <a href="ritesh.cst1@gmail.com" target="_blank"><i class="ri-mail-line"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/team4.jpg">
+                <h3>Yuvraj Singh</h3>
+                <h5>10800221137</h5>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/yuvraj-singh-35b875237" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                    <a href="yuvisia408@gmail.com" target="_blank"><i class="ri-mail-line"></i></a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="image/team5.jpg">
+                <h3>Md Salahuddin Ansari</h3>
+                <h5>10800221145</h5>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/md-salahuddin-ansari-17b744210" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                    <a href="yuvisia408@gmail.com" target="_blank"><i class="ri-mail-line"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    </footer>
+</body>
+</html>
